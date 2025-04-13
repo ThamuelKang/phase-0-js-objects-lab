@@ -17,26 +17,26 @@ function logTicketPrice() {
   console.log(attendee.ticketPrice)
 }
 
-function updateTicketType(newTicketType) {
+function updateTicketType(attendee, newTicketType) {
   attendee.ticketType = newTicketType
 }
 
-function updateTicketPrice(newPrice) {
+function updateTicketPrice(attendee, newPrice) {
   attendee.ticketPrice = newPrice
 }
 
-function removeEventProperty() {
+function removeEventProperty(attendee) {
   delete attendee.event
 }
 
-function addCheckedInProperty() {
+function addCheckedInProperty(attendee) {
   attendee.checkedInProperty = true
 }
 
-updateTicketType("General")
-updateTicketPrice(11111111111)
-removeEventProperty()
-addCheckedInProperty()
+updateTicketType(attendee, "General")
+updateTicketPrice(attendee, 11111111111)
+removeEventProperty(attendee)
+addCheckedInProperty(attendee)
 console.log(attendee)
 
 
