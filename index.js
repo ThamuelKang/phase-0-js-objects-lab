@@ -3,7 +3,7 @@
 let attendee = {
   attendeeId: "T001",
   name: "Alice Smith",
-  event: "Javascript Conference",
+  event: "JavaScript Conference",
   ticketType: "VIP",
   ticketPrice: 150.00
 }
