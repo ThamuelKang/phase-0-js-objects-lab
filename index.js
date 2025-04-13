@@ -29,18 +29,18 @@ function addCheckedInProperty() {
   attendee.addCheckedInProperty = true
 }
 
-logAttendeeName("samuel")
-console.log(attendee.name)
+// logAttendeeName("samuel")
+// console.log(attendee.name)
 
-logTicketPrice(attendee)
+// logTicketPrice(attendee)
 
-updateTicketType("VVVVVIP")
-console.log(attendee.ticketType)
+// updateTicketType("VVVVVIP")
+// console.log(attendee.ticketType)
 
-removeEventProperty()
-addCheckedInProperty()
+// removeEventProperty()
+// addCheckedInProperty()
 
-console.log(attendee)
+// console.log(attendee)
 
 
 
