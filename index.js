@@ -30,14 +30,9 @@ function removeEventProperty(attendee) {
 }
 
 function addCheckedInProperty(attendee) {
-  attendee.checkedInProperty = true
+  attendee.checkedIn = true
 }
 
-updateTicketType(attendee, "General")
-updateTicketPrice(attendee, 11111111111)
-removeEventProperty(attendee)
-addCheckedInProperty(attendee)
-console.log(attendee)
 
 
 
