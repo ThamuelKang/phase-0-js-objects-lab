@@ -18,40 +18,36 @@ function logTicketPrice() {
 }
 
 function updateTicketType(newTicketType) {
-  attendee.ticketType = newTicketType;
+  attendee.ticketType = newTicketType
+}
+
+function updateTicketPrice(newPrice) {
+  attendee.ticketPrice = newPrice
 }
 
 function removeEventProperty() {
-  delete attendee.event 
+  delete attendee.event
 }
 
 function addCheckedInProperty() {
   attendee.addCheckedInProperty = true
 }
 
-// logAttendeeName("samuel")
-// console.log(attendee.name)
-
-// logTicketPrice(attendee)
-
-// updateTicketType("VVVVVIP")
-// console.log(attendee.ticketType)
-
-// removeEventProperty()
-// addCheckedInProperty()
-
-// console.log(attendee)
-
+updateTicketType("General")
+updateTicketPrice(11111111111)
+removeEventProperty()
+addCheckedInProperty()
+console.log(attendee)
 
 
 
 //Needed for the tests to work. Don't modify
-module.exports = {
-  ...(typeof attendee !== 'undefined' && { attendee }),
-  ...(typeof logAttendeeName !== 'undefined' && { logAttendeeName }),
-  ...(typeof logTicketPrice !== 'undefined' && { logTicketPrice }),
-  ...(typeof updateTicketType !== 'undefined' && { updateTicketType }),
-  ...(typeof updateTicketPrice !== 'undefined' && { updateTicketPrice }),
-  ...(typeof removeEventProperty !== 'undefined' && { removeEventProperty }),
-  ...(typeof addCheckedInProperty !== 'undefined' && { addCheckedInProperty })
-};
+// module.exports = {
+//   ...(typeof attendee !== 'undefined' && { attendee }),
+//   ...(typeof logAttendeeName !== 'undefined' && { logAttendeeName }),
+//   ...(typeof logTicketPrice !== 'undefined' && { logTicketPrice }),
+//   ...(typeof updateTicketType !== 'undefined' && { updateTicketType }),
+//   ...(typeof updateTicketPrice !== 'undefined' && { updateTicketPrice }),
+//   ...(typeof removeEventProperty !== 'undefined' && { removeEventProperty }),
+//   ...(typeof addCheckedInProperty !== 'undefined' && { addCheckedInProperty })
+// };
