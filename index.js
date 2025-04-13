@@ -9,11 +9,11 @@ let attendee = {
 }
 
 
-function logAttendeeName(name) {
-  attendee.name = name
+function logAttendeeName() {
+  console.log(attendee.name)
 }
 
-function logTicketPrice(attendee) {
+function logTicketPrice() {
   console.log(attendee.ticketPrice)
 }
 
